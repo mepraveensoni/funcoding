@@ -1,0 +1,200 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 500px;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 2em;
+    text-align: center;
+    margin: 1em 0;
+}
+
+
+form {
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+label {
+    display: inline-flex; /* added this line */
+    align-items: center; /* added this line */
+    margin-top: 1em;
+    padding-left: 0.8em;
+}
+
+input[type="text"],
+select {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    font-size: 1em;
+    border-radius: 0.25em;
+    border: 1px solid #ccc;
+    padding-left: 0.8em;
+}
+
+input[type="radiobox"] {
+    margin-right: 0.5em;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+input[type="radiobox"]::before {
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 0.25em;
+    content: "";
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+input[type="radiobox"]:checked::before {
+    content: "\2714";
+    font-size: 1.5em;
+    color: #8B00FF;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    background-color: #8B00FF;
+    color: #fff;
+    border: none;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #6A0DAD;
+    color: black;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+#popup-list {
+    margin-top: 1em;
+}
+
+#generate-notes {
+    margin-right: 0.5em;
+}
+
+#reset {
+    background-color: #f44336;
+    margin-right: 0.5em;
+}
+
+#reset:hover {
+    background-color: #d32f2f;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    width: 80%; /* Set the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.radio-container {
+    flex: 1 0 50%;
+    display: block;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.form-container {
+    flex: 1 0 50%;
+    padding: 2rem;
+}
+
+.output-container {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+.output {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    resize: none;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.input {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    color: #333;
+    resize: none;
+    height: 50%;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    color: #002f5a;
+    text-shadow: 2px 2px #ccc;
+  }
+  
+
+  
+ 
+#notes-output {
+    width: 400px;
+    height: 200px;
+    overflow-y: scroll;
+  }
+
+#additional-radioboxes {
+	width: 500px;
+	height: 200px;
+	overflow-y: scroll;
+}
+  
+@media screen and (max-width: 500px) {
+    /* Handle responsive design for screens smaller than 320px */
+    body {
+        max-width: 100%;
+        padding: 0 1em;
+    }
+}
